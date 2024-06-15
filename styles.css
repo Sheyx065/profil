@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.sidebar button:hover {
+    background-color: #555;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.profile input {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.profile button {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.profile button:hover {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+#userList {
+    margin-top: 20px;
+}
+
+#userList h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#userList ul {
+    list-style-type: none;
+}
+
+#userList ul li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#userList ul li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+#userList ul li button:hover {
+    background-color: #999;
+}
